@@ -4,7 +4,7 @@ Donate Link: http://www.bubbl.me
 Tags: Bubbl, clip, clipping
 Requires at least: 3.0.1
 Tested up to: 4.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,3 +31,10 @@ This Plugin adds the above features to Wordpress sites that have embedded YouTub
 1. After activating the plugin, navigate to a page with a Youtube or Vimeo video embedded. The plugin will detect the video automatically and begin the ingestion process.
 
 That's it! The Bubbl Ingestion process is based on a queueing system. The amount of time it takes to ingest content is dependent on the length of the video and the number of the videos in the queue. Once ingestion is complete the "Clip This!" button will appear over the video every time the video page is loaded.
+
+== Changelog ==
+
+= 1.1 =
+
+* BUG: Fixed issue where YouTube embed URL query string is re-written incorrectly when there are no initial query string parameters
+
